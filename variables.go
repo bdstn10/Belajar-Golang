@@ -41,4 +41,20 @@ func main() {
 	// println(b)
 	// println(c)
 	// // println(d)
+
+	// var a, b, c, d int = 2, 4, 5, 8
+	// var a, b = 6, "Hello"
+	// c, d := 7, "World"
+
+	// var (
+	// 	a int
+	// 	b int    = 6
+	// 	c string = "Hello"
+	// 	d string = "World"
+	// )
+
+	// println(a)
+	// println(b)
+	// println(c)
+	// println(d)
 }
