@@ -5,21 +5,19 @@ import "fmt"
 func main() {
 	var warnaLampu string = "kuning"
 
-	switch warnaLampu {
-	// Switch case multiple case
-	case "jingga", "ungu", "biru":
-		fmt.Println("Mungkin itu warna pelangi")
-	case "merah":
+	// if else like switch case usage
+	switch {
+	case len(warnaLampu) > 5:
+		fmt.Println("Ada cukup banyak karakter di variabel tersebut")
+	case warnaLampu == "merah":
 		{
 			fmt.Println("Mohon berhenti!")
 		}
-	case "kuning":
+	case warnaLampu == "kuning":
 		fmt.Println("Hati-hati")
 		fmt.Println("Jangan nekat")
-		fallthrough
-	case "hijau":
+	case warnaLampu == "hijau":
 		fmt.Println("Silahkan jalan")
-		fallthrough
 	default:
 		{
 			fmt.Println("Switch case selesai")
