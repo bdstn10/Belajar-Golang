@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var warnaLampu string = "biru"
+	var warnaLampu string = "kuning"
 
 	switch warnaLampu {
 	// Switch case multiple case
@@ -16,11 +16,13 @@ func main() {
 	case "kuning":
 		fmt.Println("Hati-hati")
 		fmt.Println("Jangan nekat")
+		fallthrough
 	case "hijau":
 		fmt.Println("Silahkan jalan")
+		fallthrough
 	default:
 		{
-			fmt.Println("Tidak tahu!")
+			fmt.Println("Switch case selesai")
 		}
 	}
 }
