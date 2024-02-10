@@ -3,15 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	// while loop syntax in Golang
-	var i int = 0
-	for {
-		fmt.Println("Berhitung ", i)
+	for i := 1; i < 10; i++ {
+		if i%2 != 0 {
+			continue
+		}
 
-		i++
-		if i > 5 {
+		if i > 8 {
 			break
 		}
 
+		fmt.Println("Angka Genap ", i)
 	}
 }
