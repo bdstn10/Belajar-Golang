@@ -3,15 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	for i := 1; i < 10; i++ {
-		if i%2 != 0 {
-			continue
-		}
+	// Membuat array daftar_siswa dengan ukuran 3 elemen
+	var daftar_siswa [3]string
+	daftar_siswa[0] = "Budi Setiawan"
+	daftar_siswa[1] = "Adifa Kyla"
+	daftar_siswa[2] = "Ramandhika"
 
-		if i > 8 {
-			break
-		}
-
-		fmt.Println("Angka Genap ", i)
-	}
+	fmt.Println(daftar_siswa[0], daftar_siswa[1], daftar_siswa[2])
 }
