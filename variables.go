@@ -3,9 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	var warnaLampu string = "hijau"
+	var warnaLampu string = "biru"
 
 	switch warnaLampu {
+	// Switch case multiple case
+	case "jingga", "ungu", "biru":
+		fmt.Println("Mungkin itu warna pelangi")
 	case "merah":
 		{
 			fmt.Println("Mohon berhenti!")
